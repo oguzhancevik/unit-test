@@ -30,4 +30,15 @@ public class CustomerServiceTest {
     Assert.assertTrue(customerRepository.getCustomers().containsValue(customer));
     //Mockito.verify(customerRepository).save(customer);
   }
+
+  @Test
+  public void find(){
+    Customer customer = new Customer();
+    customer.setId(6500);
+    customerService.saveCustomer(customer);
+
+    Assert.assertEquals(customer, customerRepository.find(6500));
+
+  }
+
 }

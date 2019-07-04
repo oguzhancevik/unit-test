@@ -10,4 +10,9 @@ public class CustomerRepository {
     System.out.println("Customer deleted!");
   }
 
+  public Customer find(Integer id){
+    System.out.println("Find Customer!");
+    return null;
+  }
+
 }

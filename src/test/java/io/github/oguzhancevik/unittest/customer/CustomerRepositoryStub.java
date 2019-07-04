@@ -17,7 +17,12 @@ public class CustomerRepositoryStub extends CustomerRepository {
     customers.remove(id);
   }
 
-  public Map<Integer, Customer> getCustomers() {
+    @Override
+    public Customer find(Integer id) {
+        return customers.get(id);
+    }
+
+    public Map<Integer, Customer> getCustomers() {
     return customers;
   }
 }
