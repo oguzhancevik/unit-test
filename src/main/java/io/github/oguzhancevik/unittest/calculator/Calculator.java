@@ -1,4 +1,4 @@
-package io.github.oguzhancevik.unittest;
+package io.github.oguzhancevik.unittest.calculator;
 
 public class Calculator {
 

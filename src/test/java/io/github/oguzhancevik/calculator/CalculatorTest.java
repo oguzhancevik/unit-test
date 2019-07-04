@@ -1,6 +1,6 @@
 package io.github.oguzhancevik.calculator;
 
-import io.github.oguzhancevik.unittest.Calculator;
+import io.github.oguzhancevik.unittest.calculator.Calculator;
 import org.junit.Assert;
 import org.junit.Test;
 
