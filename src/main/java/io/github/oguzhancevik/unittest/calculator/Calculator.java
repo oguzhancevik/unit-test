@@ -13,4 +13,8 @@ public class Calculator {
   public int subtractFromZero(int number) {
     return 0 - number;
   }
+
+  public int calculateSquareMeter(int width, int height) {
+    return width * height;
+  }
 }
