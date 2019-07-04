@@ -18,6 +18,12 @@ public class CalculatorTest {
         Assert.assertEquals(10, calculator.subtract(20, 10));
     }
 
+    @Test
+    public void subtractFromZero(){
+        Calculator calculator = new Calculator();
+        Assert.assertEquals(-5, calculator.subtractFromZero(5));
+    }
+
 
 
 }
