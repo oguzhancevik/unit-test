@@ -24,6 +24,20 @@ public class CalculatorTest {
         Assert.assertEquals(-5, calculator.subtractFromZero(5));
     }
 
+    @Test
+    public void givenWhenThen(){
+        // Given
+        Calculator calculator = new Calculator();
+        int number1 = 5;
+        int number2 = 10;
+
+        // When
+        int sum = calculator.sum(number1, number2);
+
+        // Then
+        Assert.assertEquals(15, sum);
+    }
+
 
 
 }
