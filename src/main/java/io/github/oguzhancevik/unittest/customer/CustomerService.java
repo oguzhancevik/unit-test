@@ -10,7 +10,7 @@ public class CustomerService {
     informationService.sendMailForNewCustomer(customer);
   }
 
-  public void delete(Integer id){
+  public void delete(Integer id) {
     customerRepository.delete(id);
   }
 

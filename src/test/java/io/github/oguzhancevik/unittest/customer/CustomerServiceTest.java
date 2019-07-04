@@ -34,23 +34,21 @@ public class CustomerServiceTest {
     // check
     Mockito.verify(informationService).sendMailForNewCustomer(customer);
     Assert.assertTrue(customerRepository.getCustomers().containsValue(customer));
-    //Mockito.verify(customerRepository).save(customer);
+    // Mockito.verify(customerRepository).save(customer);
   }
 
   @Test
-  public void find(){
+  public void find() {
     Customer customer = new Customer();
     customer.setId(6500);
     customerService.saveCustomer(customer);
 
     Assert.assertEquals(customer, customerRepository.find(6500));
-
   }
 
   @Test
-  public void remove(){
+  public void remove() {
     customerService.delete(6500);
     Assert.assertNull(customerRepository.find(6500));
   }
-
 }

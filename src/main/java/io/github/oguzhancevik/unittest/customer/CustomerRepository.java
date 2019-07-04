@@ -6,13 +6,12 @@ public class CustomerRepository {
     System.out.println("Customer saved!");
   }
 
-  public void delete(Integer id){
+  public void delete(Integer id) {
     System.out.println("Customer deleted!");
   }
 
-  public Customer find(Integer id){
+  public Customer find(Integer id) {
     System.out.println("Find Customer!");
     return null;
   }
-
 }
