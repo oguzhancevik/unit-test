@@ -41,4 +41,10 @@ public class CustomerServiceTest {
 
   }
 
+  @Test
+  public void remove(){
+    customerService.delete(6500);
+    Assert.assertNull(customerRepository.find(6500));
+  }
+
 }
