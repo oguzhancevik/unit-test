@@ -1,7 +1,7 @@
-# Spring8
+# Unit Test
 
-luv2code Udemy Spring Boot Course
+Unit Test Yazma Sanatı
 
 <br/>
 
-https://www.udemy.com/spring-hibernate-tutorial
+udemy.com/unit-test-yazma-sanati
