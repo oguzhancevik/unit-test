@@ -25,4 +25,8 @@ public class CustomerRepositoryStub extends CustomerRepository {
     public Map<Integer, Customer> getCustomers() {
     return customers;
   }
+
+    public void deleteAllCustomers() {
+      customers.clear();
+    }
 }

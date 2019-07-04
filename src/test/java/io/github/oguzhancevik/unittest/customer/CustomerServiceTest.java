@@ -1,5 +1,6 @@
 package io.github.oguzhancevik.unittest.customer;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,7 +9,7 @@ import org.mockito.Mockito;
 public class CustomerServiceTest {
 
   private CustomerService customerService;
-  private CustomerRepositoryStub customerRepository = new CustomerRepositoryStub();;
+  private CustomerRepositoryStub customerRepository = new CustomerRepositoryStub();
   private InformationService informationService;
 
   @Before
@@ -17,6 +18,11 @@ public class CustomerServiceTest {
     informationService = Mockito.mock(InformationService.class);
     customerService.setCustomerRepository(customerRepository);
     customerService.setInformationService(informationService);
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    customerRepository.deleteAllCustomers();
   }
 
   @Test
