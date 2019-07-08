@@ -11,5 +11,4 @@ public class InformationService {
   public void sendWeeklyMail() {
     throw new MailServerUnavailableException("Mail failed!");
   }
-
 }

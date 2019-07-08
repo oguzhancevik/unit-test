@@ -11,6 +11,9 @@ import java.util.Collection;
 public class ParameterTest {
 
   Calculator calculator = new Calculator();
+  private int width;
+  private int height;
+  private int totalSquareMeter;
 
   @Parameterized.Parameters
   private static Collection<Object[]> data() {
@@ -21,10 +24,6 @@ public class ParameterTest {
           {10, 3, 30},
         });
   }
-
-  private int width;
-  private int height;
-  private int totalSquareMeter;
 
   @Test
   public void calculateSquareMeter() {
